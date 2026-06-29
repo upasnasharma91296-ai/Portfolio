@@ -1,0 +1,294 @@
+/* ==================== About Page ==================== */
+
+/* Headline */
+.about-content .hero-line {
+  margin-bottom: 72px;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 0.85em;
+  background-color: var(--text-color);
+  margin-left: 2px;
+  vertical-align: middle;
+  animation: cur-blink 1s step-end infinite;
+}
+
+@keyframes cur-blink {
+  50% { opacity: 0; }
+}
+
+/* ── Story sections ── */
+.story-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  margin-bottom: 80px;
+  align-items: center;
+}
+
+.story-section.reverse {
+  direction: rtl;
+}
+
+.story-section.reverse > * {
+  direction: ltr;
+}
+
+.story-intro {
+  color: var(--text-muted);
+  margin-bottom: 40px;
+}
+
+.story-heading {
+  font-family: 'Geist Pixel', var(--font-body);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.1;
+  color: var(--text-color);
+  margin: 0 0 16px;
+}
+
+.story-text p {
+  color: var(--text-muted);
+}
+
+.story-text p + p {
+  margin-top: 14px;
+}
+
+.story-photo,
+.story-photo-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 16px;
+  object-fit: cover;
+  display: block;
+  background: var(--hover-bg);
+  border: 1px solid var(--border-color);
+}
+
+/* ── Experience & Education ── */
+.about-resume-block {
+  border-top: 1px solid var(--border-color);
+  padding-top: 48px;
+  margin-bottom: 72px;
+}
+
+.about-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.about-block-label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.about-block-link {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: var(--transition);
+}
+
+.about-block-link:hover {
+  color: var(--text-color);
+}
+
+.experience-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-item {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.exp-company {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-color);
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.exp-role {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  flex: 1;
+}
+
+.exp-year {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  flex-shrink: 0;
+}
+
+.education-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.education-item {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.edu-school {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-color);
+  min-width: 160px;
+  flex-shrink: 0;
+}
+
+.edu-degree {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  flex: 1;
+}
+
+.edu-year {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  flex-shrink: 0;
+}
+
+/* ── Music section ── */
+.about-fun-block {
+  margin-bottom: 72px;
+}
+
+.about-fun-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.about-fun-title {
+  font-family: 'Geist Pixel', var(--font-body);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.1;
+  color: var(--text-color);
+}
+
+.about-fun-link {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: var(--transition);
+}
+
+.about-fun-link:hover {
+  color: var(--text-color);
+}
+
+.spotify-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.spotify-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background: var(--bg-card);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.spotify-card:hover {
+  background: var(--hover-bg);
+}
+
+.spotify-art {
+  width: 52px;
+  height: 52px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.spotify-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.spotify-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.spotify-artist {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Bookshelf ── */
+.books-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.book-cover {
+  width: 100%;
+  aspect-ratio: 2/3;
+  flex-shrink: 0;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+  background: var(--hover-bg);
+  border: 1px solid var(--border-color);
+}
+
+/* ── Communities ── */
+.communities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.community-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  background: var(--hover-bg);
+  border: 1px solid var(--border-color);
+}

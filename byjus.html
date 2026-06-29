@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Byju's Live Quiz — Case Study | Upasna Sharma</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/case-study.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital@0;1&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="avatar"><img src="assets/images/me.png" alt="Upasna Sharma" /></div>
+        <div class="profile-info">
+          <h1>Upasna Sharma</h1>
+          <p>Product Designer</p>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html#home" class="nav-item">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          Home
+        </a>
+        <a href="about.html" class="nav-item">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"></path></svg>
+          About Me
+        </a>
+      </nav>
+
+      <div class="sidebar-group">
+        <h2 class="sidebar-label">Projects</h2>
+        <div class="nav-accordion">
+          <button class="nav-item nav-accordion-header" data-href="american-express.html">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path></svg>
+            <span class="nav-accordion-text">American Express</span>
+            <svg class="nav-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav-submenu">
+            <a href="american-express.html#overview" class="nav-subitem">Overview</a>
+            <a href="american-express.html#why-redesign" class="nav-subitem">Why Redesign</a>
+            <a href="american-express.html#users" class="nav-subitem">Users</a>
+            <a href="american-express.html#my-approach" class="nav-subitem">My Approach</a>
+            <a href="american-express.html#existing-platform" class="nav-subitem">Existing Platform &amp; Journeys</a>
+            <a href="american-express.html#research" class="nav-subitem">Research</a>
+            <a href="american-express.html#user-flows" class="nav-subitem">User Flows</a>
+            <a href="american-express.html#final-design" class="nav-subitem">Final Design</a>
+            <a href="american-express.html#impact" class="nav-subitem">Impact</a>
+          </div>
+        </div>
+        <div class="nav-accordion">
+          <button class="nav-item nav-accordion-header" data-href="zenda.html">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path></svg>
+            <span class="nav-accordion-text">Zenda LLC</span>
+            <svg class="nav-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav-submenu">
+            <a href="zenda.html#overview" class="nav-subitem">Overview</a>
+            <a href="zenda.html#design-process" class="nav-subitem">Design Process</a>
+            <a href="zenda.html#problem" class="nav-subitem">Problem Statement</a>
+            <a href="zenda.html#users" class="nav-subitem">Users</a>
+            <a href="zenda.html#scope" class="nav-subitem">Scope</a>
+            <a href="zenda.html#research" class="nav-subitem">Research</a>
+            <a href="zenda.html#design-decisions" class="nav-subitem">Design Decisions</a>
+            <a href="zenda.html#signal-types" class="nav-subitem">Signal Types</a>
+            <a href="zenda.html#side-panel" class="nav-subitem">Side Panel</a>
+            <a href="zenda.html#final-design" class="nav-subitem">Final Design</a>
+            <a href="zenda.html#impact" class="nav-subitem">Impact</a>
+          </div>
+        </div>
+        <div class="nav-accordion">
+          <button class="nav-item nav-accordion-header" data-href="dala.html">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path></svg>
+            <span class="nav-accordion-text">Dala.AI</span>
+            <svg class="nav-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav-submenu">
+            <a href="dala.html" class="nav-subitem">View Case Study</a>
+          </div>
+        </div>
+        <div class="nav-accordion open">
+          <button class="nav-item active nav-accordion-header">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path></svg>
+            <span class="nav-accordion-text">Byju's</span>
+            <svg class="nav-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav-submenu">
+            <a href="#" class="nav-subitem">View Case Study</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-group">
+        <h2 class="sidebar-label">Let's Connect</h2>
+        <a href="mailto:upasna.sharma91296@gmail.com" class="nav-item external">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          Email
+          <svg class="icon icon-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        </a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="nav-item external">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          LinkedIn
+          <svg class="icon icon-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="nav-item external">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          GitHub
+          <svg class="icon icon-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        </a>
+        <a href="https://drive.google.com/file/d/1H7ho3Mu93DV2xu78M6EdQDFs5h-0VuXt/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="nav-item external">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+          Resume
+          <svg class="icon icon-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        </a>
+      </div>
+
+      <div class="sidebar-footer">
+        <p>Designed &amp; built with care, chai, and good music.</p>
+        <p>© Upasna Sharma, <span id="year"></span></p>
+      </div>
+    </aside>
+
+    <!-- Main wrapper -->
+    <div class="main-wrapper">
+    <header class="top-bar">
+      <div class="top-bar-left">
+        <a href="index.html" class="top-bar-back" aria-label="Back to home">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </a>
+        <span class="top-bar-title">Byju's Live Quiz</span>
+      </div>
+      <div class="theme-toggle-row">
+        <svg class="icon theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg class="icon theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <span class="theme-label-text theme-label-dark">Dark</span>
+        <span class="theme-label-text theme-label-light">Light</span>
+        <button class="theme-switch" id="theme-toggle" role="switch" aria-checked="false" aria-label="Toggle light and dark mode">
+          <span class="theme-switch-thumb"></span>
+        </button>
+      </div>
+    </header>
+    <main class="content">
+      <div class="case-content">
+        <a href="index.html#projects" class="back-link">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          Back to Projects
+        </a>
+
+        <!-- Hero -->
+        <section class="case-hero">
+          <p class="label">Case Study</p>
+          <h1>Byju's Live Quiz — Designing Real-Time Competitive Learning</h1>
+          <p class="case-subtitle">
+            End-to-end design of Byju's Live Quiz—a real-time competitive quiz feature inside the
+            Byju's app—turning passive learning moments into live, social, and rewarding experiences
+            for millions of students.
+          </p>
+          <div class="case-meta">
+            <div class="case-meta-item">
+              <span class="case-meta-label">Role</span>
+              <span>Product Designer</span>
+            </div>
+            <div class="case-meta-item">
+              <span class="case-meta-label">Timeline</span>
+              <span>2021–2022</span>
+            </div>
+            <div class="case-meta-item">
+              <span class="case-meta-label">Impact</span>
+              <span>Drove a significant uplift in weekly active engagement</span>
+            </div>
+          </div>
+          <div class="media-placeholder">
+            <span class="media-caption">Hero banner — Byju's Live Quiz experience</span>
+          </div>
+        </section>
+
+        <!-- Overview -->
+        <section class="case-section">
+          <h2 class="label">Overview</h2>
+          <p>
+            Byju's Live Quiz is a synchronous, competitive quiz format built inside the Byju's learning
+            app. Students compete against each other in real time, earn quiz points, climb weekly
+            leaderboards, and win rewards—creating a social learning loop that drives repeat engagement.
+            The design challenge was to make competition feel motivating and fair, not anxiety-inducing,
+            while keeping the experience lightweight enough to run on mid-range Android devices across
+            Tier 2 and Tier 3 cities.
+          </p>
+        </section>
+
+        <!-- Why This Feature -->
+        <section class="case-section">
+          <h2 class="label">Why This Feature</h2>
+          <p>
+            Retention data showed that students who completed one chapter rarely returned the following
+            week without an external trigger. Push notifications had declining open rates.
+            The team needed an intrinsic pull mechanism—something that made students want to return
+            at a specific time, not because they were reminded to, but because missing it had a cost.
+          </p>
+          <div class="callout">
+            <span class="callout-label">The Challenge</span>
+            <p>
+              How might we design a competitive quiz format that feels exciting and fair for students
+              across varying skill levels, devices, and internet conditions?
+            </p>
+          </div>
+        </section>
+
+        <!-- Users -->
+        <section class="case-section">
+          <h2 class="label">Users</h2>
+          <p>
+            The feature targeted two overlapping audiences with different motivations. Competitive
+            students wanted rank, recognition, and rewards. Casual learners needed enough stakes to
+            feel engaged without feeling discouraged by experts at the top of the leaderboard.
+          </p>
+          <div class="user-cards">
+            <div class="user-card">
+              <h3>Competitive Students</h3>
+              <p>Motivated by rank and rewards. Want to see their position on the leaderboard in real time and share achievements with peers.</p>
+            </div>
+            <div class="user-card">
+              <h3>Casual Learners</h3>
+              <p>Participate for engagement and prize chances. Need early wins and visible progress to stay motivated beyond the first round.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- My Approach -->
+        <section class="case-section">
+          <h2 class="label">My Approach</h2>
+          <p>
+            I started by studying existing gamification patterns in edtech and gaming apps, then
+            ran concept testing sessions with students before moving into wireframes. A key constraint
+            was designing for low-bandwidth conditions and a wide range of screen sizes, which shaped
+            every layout and interaction decision.
+          </p>
+          <ol class="approach-steps">
+            <li>Competitive Analysis</li>
+            <li>Student Interviews</li>
+            <li>Concept Testing</li>
+            <li>Constraint Mapping</li>
+            <li>Wireframes</li>
+            <li>Prototype Testing</li>
+            <li>High-fi Design</li>
+            <li>Handoff</li>
+          </ol>
+          <div class="media-placeholder">
+            <span class="media-caption">Approach diagram — research to handoff</span>
+          </div>
+        </section>
+
+        <!-- Existing Experience & Pain Points -->
+        <section class="case-section">
+          <h2 class="label">Existing Experience &amp; Pain Points</h2>
+          <p>
+            The existing practice quiz experience was asynchronous and self-paced—no competitive element,
+            no social layer, no time pressure. Students completed quizzes in isolation with no visible
+            outcome beyond a score. The lack of stakes meant there was nothing to come back for.
+          </p>
+          <div class="media-placeholder">
+            <span class="media-caption">Existing practice quiz flow — pain points mapped</span>
+          </div>
+        </section>
+
+        <!-- Research -->
+        <section class="case-section">
+          <h2 class="label">Research</h2>
+          <p>
+            We ran concept testing with 24 students across grades 6–10 and analysed engagement patterns
+            from the existing quiz module. Six design dimensions were scored on motivational impact
+            and implementation complexity.
+          </p>
+          <div class="research-grid">
+            <div class="research-card">
+              <h4>Live Leaderboard</h4>
+              <div class="media-placeholder small">
+                <span class="media-caption">Motivation vs Complexity</span>
+              </div>
+            </div>
+            <div class="research-card">
+              <h4>Reward System</h4>
+              <div class="media-placeholder small">
+                <span class="media-caption">Motivation vs Complexity</span>
+              </div>
+            </div>
+            <div class="research-card">
+              <h4>Time Pressure</h4>
+              <div class="media-placeholder small">
+                <span class="media-caption">Motivation vs Complexity</span>
+              </div>
+            </div>
+            <div class="research-card">
+              <h4>Social Reactions</h4>
+              <div class="media-placeholder small">
+                <span class="media-caption">Motivation vs Complexity</span>
+              </div>
+            </div>
+            <div class="research-card">
+              <h4>Weekly Reset</h4>
+              <div class="media-placeholder small">
+                <span class="media-caption">Motivation vs Complexity</span>
+              </div>
+            </div>
+            <div class="research-card">
+              <h4>Achievement Sharing</h4>
+              <div class="media-placeholder small">
+                <span class="media-caption">Motivation vs Complexity</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- User Flows -->
+        <section class="case-section">
+          <h2 class="label">User Flows</h2>
+
+          <div class="flow-block">
+            <h3>Pre-Quiz Entry Flow</h3>
+            <div class="media-placeholder">
+              <span class="media-caption">Entry flow — discovery to quiz start</span>
+            </div>
+            <p>
+              Students discovered the quiz via a home screen banner and countdown timer. The entry
+              flow needed to create anticipation without revealing too much about difficulty—keeping
+              the decision to participate low-friction.
+            </p>
+          </div>
+
+          <div class="flow-block">
+            <h3>Live Quiz &amp; Results Flow</h3>
+            <div class="media-placeholder">
+              <span class="media-caption">Live flow — question → leaderboard → results</span>
+            </div>
+            <p>
+              Each question surfaced with a countdown timer. Between questions, a brief leaderboard
+              flash showed rank movement. The end state combined rank, points earned, and rewards
+              unlocked—closing the loop and seeding the next session.
+            </p>
+          </div>
+        </section>
+
+        <!-- Final Design -->
+        <section class="case-section">
+          <h2 class="label">Final Design</h2>
+
+          <div class="design-block">
+            <h3>Live Question Screen</h3>
+            <div class="media-placeholder">
+              <span class="media-caption">Live question — timer, options, participant count</span>
+            </div>
+            <p>
+              A persistent countdown timer and live participant count created urgency without clutter.
+              Answer options were large touch targets, optimised for one-handed use.
+            </p>
+          </div>
+
+          <div class="design-block">
+            <h3>Leaderboard &amp; Results</h3>
+            <div class="media-placeholder">
+              <span class="media-caption">Weekly leaderboard — rank, points, rewards</span>
+            </div>
+            <ul class="feature-list">
+              <li>Top 3 ranks highlighted with trophy imagery and prize labels.</li>
+              <li>Personal rank and rank delta visible at a glance.</li>
+              <li>Rewards tiered across rank bands to keep mid-table students engaged.</li>
+            </ul>
+          </div>
+
+          <div class="design-block">
+            <h3>Social Reactions Flow</h3>
+            <div class="media-placeholder video">
+              <span class="media-caption">Demo — live reaction overlay during quiz</span>
+            </div>
+            <ul class="feature-list">
+              <li>Students could send emoji reactions visible to all participants in real time.</li>
+              <li>Reactions were throttled to avoid visual overwhelm on low-end devices.</li>
+              <li>Social layer made the experience feel live even with asynchronous infrastructure.</li>
+            </ul>
+          </div>
+
+          <div class="design-block">
+            <h3>Achievement &amp; Share Screen</h3>
+            <div class="media-placeholder video">
+              <span class="media-caption">Demo — result card and share flow</span>
+            </div>
+            <ul class="feature-list">
+              <li>Auto-generated result cards optimised for WhatsApp and Instagram Stories sharing.</li>
+              <li>Share flow added a viral loop—friends who tapped the shared card landed directly in the next quiz.</li>
+              <li>Reward redemption integrated into the result screen to reduce drop-off.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Impact -->
+        <section class="case-section">
+          <h2 class="label">Impact</h2>
+          <div class="stat-highlight">
+            <span class="stat-number accent">3×</span>
+            <span class="stat-text">Weekly active engagement on the quiz module increased 3× within the first month of launch.</span>
+          </div>
+          <ul class="impact-list">
+            <li>Weekly quiz participation grew to hundreds of thousands of concurrent students.</li>
+            <li>Repeat participation rate significantly higher than the previous practice quiz format.</li>
+            <li>Share feature drove measurable new-user acquisition with zero media spend.</li>
+            <li>Reward redemption rate exceeded projections, validating the incentive design.</li>
+            <li>Feature became one of the highest-retention touchpoints in the Byju's app.</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    </div><!-- /.main-wrapper -->
+
+  </div><!-- /.layout -->
+
+  <script src="js/case-study.js"></script>
+</body>
+</html>
