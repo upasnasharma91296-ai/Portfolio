@@ -216,3 +216,28 @@ document.querySelectorAll('.nav-accordion-header').forEach(header => {
     }
   });
 });
+
+// Hamburger menu
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const sidebar = document.getElementById('sidebar');
+const sidebarOverlay = document.getElementById('sidebar-overlay');
+
+if (hamburgerBtn && sidebar && sidebarOverlay) {
+  function openSidebar() {
+    sidebar.classList.add('mobile-open');
+    sidebarOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeSidebar() {
+    sidebar.classList.remove('mobile-open');
+    sidebarOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  hamburgerBtn.addEventListener('click', openSidebar);
+  sidebarOverlay.addEventListener('click', closeSidebar);
+  sidebar.querySelectorAll('a, button.nav-accordion-header').forEach(el => {
+    el.addEventListener('click', () => {
+      if (window.innerWidth <= 768) closeSidebar();
+    });
+  });
+}

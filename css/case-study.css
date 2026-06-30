@@ -413,27 +413,32 @@
 
 
 /* ==================== Responsive ==================== */
-@media (max-width: 700px) {
-  .case-hero h1 {
-    font-size: 1.8rem;
-  }
+@media (max-width: 768px) {
+  .case-hero h1 { font-size: 1.6rem; }
+  .case-hero-heading { font-size: 1.8rem; }
 
-  .user-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .research-grid {
+  .case-meta {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
+
+  .user-cards { grid-template-columns: 1fr; }
+
+  .research-grid { grid-template-columns: repeat(2, 1fr); }
 
   .stat-highlight {
     flex-direction: column;
     text-align: center;
   }
+
+  .content { padding-top: 28px; }
 }
 
 @media (max-width: 480px) {
-  .research-grid {
-    grid-template-columns: 1fr;
-  }
+  .case-hero h1 { font-size: 1.35rem; }
+  .case-hero-heading { font-size: 1.4rem; }
+  .case-meta { grid-template-columns: 1fr; gap: 16px; }
+  .research-grid { grid-template-columns: 1fr; }
+  .callout p { font-size: 1rem; }
+  .stat-number { font-size: 2rem; }
 }

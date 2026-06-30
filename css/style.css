@@ -994,27 +994,108 @@ a {
   line-height: 1.7;
 }
 
+/* ==================== Hamburger button ==================== */
+.hamburger-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: var(--transition);
+  margin-right: 8px;
+}
+
+.hamburger-btn:hover {
+  color: var(--text-color);
+  border-color: var(--text-muted);
+}
+
+/* ==================== Sidebar overlay ==================== */
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 19;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-overlay.active {
+  opacity: 1;
+}
+
 /* ==================== Responsive ==================== */
 @media (max-width: 1100px) {
   .projects { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+  /* Sidebar: hidden off-screen, slides in on mobile */
   .sidebar {
-    position: relative;
-    width: 100%;
-    height: auto;
-    border-right: none;
-    border-bottom: 1px solid var(--border-color);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 20;
+    width: 260px;
   }
 
+  .sidebar.mobile-open {
+    transform: translateX(0);
+  }
+
+  .sidebar-overlay {
+    display: block;
+  }
+
+  .sidebar-overlay.active {
+    pointer-events: auto;
+  }
+
+  /* Main layout */
   .main-wrapper { margin-left: 0; }
-  .content { padding: 24px; }
+
+  /* Top bar */
+  .hamburger-btn { display: flex; }
+
+  .top-bar { padding: 0 16px; }
+
+  /* Content */
+  .content { padding: 28px 20px 60px; }
+
+  /* Hero */
+  .hero-line:not(.muted) { font-size: 20px; }
+  .hero-line.muted { font-size: 15px; }
+  .meta-row { gap: 10px 16px; font-size: 0.8rem; }
+
+  /* About card */
+  .about { padding: 24px; }
+
+  /* Projects */
+  .projects { grid-template-columns: 1fr; }
+  .preview { height: 200px; }
+
+  /* Project panel */
+  .project-panel {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+    width: 100vw;
+    max-width: 100vw;
+  }
 }
 
-@media (max-width: 600px) {
-.hero-line { font-size: 1.05rem; }
-  .preview { height: 160px; }
+@media (max-width: 480px) {
+  .content { padding: 20px 16px 48px; }
+  .hero-line:not(.muted) { font-size: 18px; }
+  .preview { height: 180px; }
+  .project-info { padding: 16px; }
 
   .project-panel { width: 100vw; }
 }
