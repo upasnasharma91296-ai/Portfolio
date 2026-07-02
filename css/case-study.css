@@ -163,20 +163,65 @@
 }
 
 .user-card {
+  position: relative;
   border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 20px;
+  border-radius: 4px;
+  padding: 24px;
   background-color: var(--bg-sidebar);
+  overflow: hidden;
+}
+
+.user-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: var(--accent);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.2s ease;
+}
+
+.user-card:hover::before {
+  transform: scaleY(1);
+}
+
+.user-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: var(--hover-bg);
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  transition: var(--transition);
+}
+
+.user-card:hover .user-card-icon {
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  color: var(--accent);
+}
+
+.user-card-icon svg {
+  width: 20px;
+  height: 20px;
 }
 
 .user-card h3 {
   margin-top: 0;
   margin-bottom: 8px;
+  font-size: 1.05rem;
 }
 
 .user-card p {
   color: var(--text-muted);
   font-size: 0.9rem;
+  line-height: 1.55;
+  margin: 0;
 }
 
 /* Approach steps */
